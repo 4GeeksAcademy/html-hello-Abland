@@ -1,0 +1,586 @@
+
+body{
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ .Goku{
+    position: relative;
+    height: 450px;
+    width: 600px;
+    
+ }
+ .img-container{display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    
+ }
+ 
+ 
+ .face.border{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 58% / 25% 25% 52.5% 52%;
+    clip-path: polygon(0% 20%, 50% 0%, 100% 20%,95% 39%, 91% 77%,85% 100%,18% 100%,9.5%76%,5% 40%);
+ }
+ .face.in{
+    position: absolute;
+    height: 99%;
+    width: 98%;
+    left: 49.8%;
+    transform: translate(-50%,0);
+    background-color: rgb(250, 210, 162);
+    border-radius: 58% / 25% 25% 52.5% 52%;
+    clip-path: polygon(0% 20%, 50% 0%, 100% 20%,95% 39%, 91% 77%,85% 100%,18% 100%,9.5%76%,5% 40%);
+    
+    contain: content;
+ }
+ .shadow{
+   position: absolute;
+    height: 99%;
+    width: 98%;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%,0);
+    background-color: rgba(250, 210, 162, 0);
+    border-radius: 58% / 25% 25% 52.5% 52%;
+   box-shadow:inset 0px 5px 1px 25px rgb(202, 151, 89) ;
+ }
+ .face.in.front{
+   position: absolute;
+    height: 70%;
+    width: 50%;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,0);   
+   background-color: transparent;     
+}
+ .browL{
+   position: absolute;
+    bottom: 47.6%;
+    left: 27.7%;
+    transform: translate(-50%,0);
+   height: 26%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(0% 0%,95%77%,100%100%,5%20%)
+ }
+ .browR{
+   position: absolute;
+    bottom: 47.6%;
+    left: 73.2%;
+    transform: translate(-50%,0);
+   height: 26%;
+    width: 40%;
+    background-color: rgba(0, 0, 0);
+    clip-path: polygon(5% 77%, 100% 0%, 95% 20%,0% 100%)
+ }
+ .eyeL{
+   position: absolute;
+   bottom: 41%;
+   left: 28%;
+   transform: translate(-50%,0);
+   height: 24%;
+   width: 35%;
+   border-radius: 25%/ 0% 0% 25% 0%;
+   clip-path: polygon(0% 0%,30%0%,100% 60%,
+   100%100%,0%93%);
+   contain: content;
+ }
+ .eyeR{
+   position: absolute;
+   bottom: 41%;
+   left: 56.5%;
+   transform: translate(-50%,0);
+   transform: scaleX(-1);
+   height: 24%;
+   width: 35%;
+   border-radius: 25%/ 0% 0% 25% 0%;
+   clip-path: polygon(0% 0%,30%0%,100% 60%,
+   100%100%,0%93%);
+   contain: content;
+   
+ }
+ .sclera{
+   position: absolute;
+   bottom: -60%;
+   left: 74%;
+   transform: translate(-50%,0);
+   height: 200%;
+   width:130%;
+   background-color:rgba(255, 255, 255);
+   border-radius:80%/90% 80% 50% 50%;
+   border: 2px solid black;
+   rotate: 0deg;
+ }
+ .iris{position: absolute;
+   bottom: 37%;
+   left: 55%;
+   transform: translate(-50%,0);
+   height: 31%;
+   width:15%;
+   background-color:rgba(0, 0, 0);
+   border-radius:100%/50% 50% 50% 50%;
+   
+ }
+ .dashedL{
+    position: absolute;
+    bottom: 33.5%;
+    left: 25%;
+    transform: translate(-50%,0);
+    height: 5%;
+    width: 22%;
+       
+ }
+ .dashedR{
+   position: absolute;
+   bottom: 33%;
+   left: 73%;
+   transform: translate(-50%,0);
+   height: 5%;
+   width: 22%;
+   rotate: 3deg;
+ }
+ .dash1{
+    position: absolute;
+    border-radius: 50%;
+    border-top:2px solid black;
+    height: 100%;
+    width: 75%;
+    rotate: -10deg;
+
+ }
+ .dash2{
+    position: absolute;
+    top:12%;
+    left: 65%;
+    transform: translate(-50%,0);
+    border-radius: 100%;
+    border-top:2px solid black;
+    height: 70%;
+    width: 60%;
+    rotate: 3deg;
+
+ }
+ .nose{
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%,0);
+    border: 2px solid black;
+    border-radius: 50%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 50%);
+    height: 5%;
+    width: 7%;
+    rotate: -15deg;
+ }
+.mouth{
+    position: absolute;
+    bottom: 18.5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    border: 2px solid black;
+    border-radius: 50%;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 75%, 0% 75%);
+    height: 17%;
+    width: 25%;    
+}
+.highlight1{
+    position: absolute;
+    bottom: 30.5%;
+    left: 49.5%;
+    transform: translate(-50%,0);
+    rotate: -50deg;
+    height: 4%;
+    width: 6%;  
+    --d: 3px; 
+   
+    background : radial-gradient(
+        circle at 
+        var(--d) 
+        var(--d), 
+     
+        rgb(124, 112, 97) calc(var(--d) - 15px), 
+         #0000 var(--d)
+    ) 
+    0 0 / 6px 6px; 
+    background-color: rgb(255, 253, 156);
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 2px rgb(250, 210, 162) ;
+}
+.highlight2{
+    position: absolute;
+    bottom: 23%;
+    left: 63%;
+    transform: translate(-50%,0);
+    rotate: 60deg;
+    height: 6%;
+    width: 10%;  
+    --d: 3px; 
+   
+    background : radial-gradient(
+        circle at 
+        var(--d) 
+        var(--d), 
+     
+        rgb(124, 112, 97) calc(var(--d) - 15px), 
+         #0000 var(--d)
+    ) 
+    0 0 / 6px 6px;  
+    background-color: rgba(255, 253, 156, 0.76);
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 2px rgb(250, 210, 162) ;
+}
+.highlight3{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    transform: translate(-50%,0);
+    rotate: -30deg;
+    height: 30%;
+    width: 45%;  
+    --d: 3px; 
+   
+    background : radial-gradient(
+        circle at 
+        var(--d) 
+        var(--d), 
+     
+        rgb(124, 112, 97) calc(var(--d) - 15px), 
+         #0000 var(--d)
+    ) 
+    0 0 / 6px 6px;  
+    background-color: rgb(255, 253, 156);
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 20px rgb(250, 210, 162) ;
+}
+.earL{
+   position: absolute;
+   bottom: 26%;
+   left: 26%;
+   transform: translate(-50%,0);
+   rotate: -12deg;
+   height: 20.5%;
+   width: 7%;
+   background-color: rgb(250, 210, 162);
+   border-radius: 50%;
+   border: 2px solid black;
+   box-shadow:inset 0px 0px 5px rgb(202, 151, 89) ;
+   contain: content;
+   
+}
+.earbackL{
+   position: absolute;
+   bottom: 9%;
+   left: 71%;
+   transform: translate(-50%,0);
+   rotate: -6deg;
+   height: 71%;
+   width: 65%;
+   background-color: rgb(204, 149, 82);
+   border-radius: 50%;
+   border: 1px solid black;
+}
+.earfrontL{
+   position: absolute;
+   bottom: 50%;
+   left: 70%;
+   transform: translate(-50%,0);
+   rotate: -23deg;
+   height: 18%;
+   width: 100%;
+   background-color: rgb(250, 210, 162);
+   border-radius: 50%;
+   border: 1px solid black;
+   border-left: none;
+}
+.earR{
+   position: absolute;
+   bottom: 24%;
+   left: 73.8%;
+   transform: translate(-50%,0);
+   rotate: 12deg;
+   height: 20.3%;
+   width: 6.5%;
+   background-color: rgb(250, 210, 162);
+   border-radius: 50%;
+   border: 2px solid black;
+   box-shadow:inset 0px 0px 5px  rgb(202, 151, 89) ;
+   contain: content;
+}
+.earbackR{
+   position: absolute;
+   bottom: 11%;
+   left: 28%;
+   transform: translate(-50%,0);
+   rotate: -6deg;
+   height: 71%;
+   width: 60%;
+   background-color: rgb(204, 149, 82);
+   border-radius: 50%;
+   border: 1px solid black;
+}
+.earfrontR{
+   position: absolute;
+   bottom: 27%;
+   left: 20%;
+   transform: translate(-50%,0);
+   rotate: 30deg;
+   height: 18%;
+   width: 100%;
+   background-color: rgb(250, 210, 162);
+   border-radius: 50%;
+   border: 1px solid black;
+   border-right: none;
+}
+.frontHeadHair{
+   position: absolute;
+   height: 67%;
+   width: 52%;
+   bottom: 17.2%;
+   left: 50%;
+   transform: translate(-50%,0);
+   border-radius: 50%;
+   contain: content;
+   
+}
+.backHeadHair{
+   position: absolute;
+   height: 67%;
+   width: 52%;
+   bottom: 17.2%;
+   left: 50%;
+   transform: translate(-50%,0);
+   border-radius: 50%;
+   background-color: black;
+   box-shadow: 6px -4px 10px rgba(255, 255, 255, 0.555) ;
+}
+.moonhair1{
+   position: absolute;
+   height: 65%;
+   width: 65%;
+   bottom: 35%;
+   left: 50%;
+   transform: translate(-50%,0);
+   background-color: rgba(0, 0, 0);
+   border-radius: 50%;
+   overflow: hidden;
+}
+.moonhairIn1{
+   position: absolute;
+   width: 52%;
+   height: 80%;
+   border-radius:100%/100% 70% 140% 50%;
+   background: rgb(250, 210, 162);   
+   bottom: -20%;
+   left: 50%;
+   transform: translate(-50%,0);
+}
+.moonhair2{
+   position: absolute;
+   height: 100%;
+   width: 120%;
+   bottom: 28%;
+   left: 50%;
+   transform: translate(-50%,0);
+   background-color: rgba(0, 0, 0);
+   border-radius: 50%;
+   overflow: hidden;
+}
+.moonhairIn2{
+   position: absolute;
+   width: 55%;
+   height: 80%;
+   border-radius:100%;
+   background: rgb(250, 210, 162);   
+   bottom: -20%;
+   left: 50%;
+   transform: translate(-50%,0);
+}
+.hairFix{
+   position: absolute;
+   width: 40%;
+   height: 10%;
+   background: rgb(250, 210, 162);   
+   bottom: 45%;
+   left: 50%;
+   transform: translate(-50%,0);
+
+}
+.hairbit1{
+   position: absolute;
+   bottom: 75%;
+   left: 92%;
+   transform: translate(-50%,0); 
+   width: 20%;
+   height: 10%;
+   background-color: rgb(0, 0, 0);
+   box-shadow: 6px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -10%,110% 1%, -5% 100%);
+   rotate: -33deg;
+}
+.hairbit2{
+   position: absolute;
+   bottom: 62%;
+   left: 94%;
+   transform: translate(-50%,0); 
+   width: 50%;
+   height: 26%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 6px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: -30deg;
+}
+.hairbit3{
+   position: absolute;
+   bottom: 29%;
+   left: 105%;
+   transform: translate(-50%,0); 
+   width: 50%;
+   height: 40%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 6px -5px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: -20deg;
+}
+.hairbit4{
+   position: absolute;
+   bottom: 9%;
+   left: 94%;
+   transform: translate(-50%,0); 
+   width: 50%;
+   height: 26%;
+   background-color: black;
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 6px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: -6deg;
+}
+.hairbit5{
+   position: absolute;
+   bottom: 4%;
+   left: 93%;
+   transform: translate(-50%,0); 
+   width: 25%;
+   height: 13%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 6px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 0deg;
+}
+.hairbit6{
+   position: absolute;
+   bottom: 5%;
+   left: 6%;
+   transform: translate(-50%,0); 
+   width: 25%;
+   height: 13%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 0deg;
+}
+.hairbit7{
+   position: absolute;
+   bottom: 5%;
+   left: 6%;
+   transform: translate(-50%,0); 
+   width: 50%;
+   height: 26%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 5deg;
+}
+.hairbit8{
+   position: absolute;
+   bottom: 3%;
+   left: -15%;
+   transform: translate(-50%,0); 
+   width: 59%;
+   height: 48%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 20deg;
+}
+.hairbit9{
+   position: absolute;
+   bottom: 1%;
+   left: -5%;
+   transform: translate(-50%,0); 
+   width: 90%;
+   height: 63%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: -2px -1px 10px rgba(255, 255, 255, 0.855) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 31deg;
+}
+.hairbit10{
+   position: absolute;
+   bottom: 22%;
+   left: 5%;
+   transform: translate(-50%,0); 
+   width: 80%;
+   height: 55%;
+   background-color: rgba(0, 0, 0);
+   border-radius: 100%/ 100% 100% 0% 0%;
+   box-shadow: -2px -1px 10px rgba(255, 255, 255, 0.815) ;
+   clip-path: polygon(-5% -10%, 110% -110%,120% 50%, -5% 50%);
+   rotate: 50deg;
+}
+.shadowMouth{
+   position: absolute;
+   bottom: 14%;
+   left: 53%;
+   transform: translate(-50%,0); 
+   width: 8%;
+   height: 4%;
+   border-radius: 100%/ 140% 150% 80% 80%;
+   background-color: rgba(0, 0, 0, 0.233);
+   rotate: -20deg;
+}
+.hairline{
+   position: absolute;
+   width: 5%;
+   height: 60%;   
+   bottom: 60%;
+   left: 60%;
+   rotate:20deg;
+   border-radius: 100%;
+   border: solid black 10px;
+   border-bottom: none;
+   border-right: none;
+   transform: translate(-50%,0);
+}
+
+
+
+
+.title{
+   margin: 10px;
+   border: 1px solid black;
+   border-left: none;
+   border-right: none;
+   font-family: "Yellowtail", serif;
+   font-size: 250%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 400px;
+   height: 120px;
+}
